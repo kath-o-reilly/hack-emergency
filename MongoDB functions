@@ -5,7 +5,7 @@ db.system.js.save(
        value: function() {db.getCollection('tweets').find({full_name:'Nepal'})}
    }
   );
-  #### to have the proportion f tweets with geocoded tags
+  #### to have the proportion of tweets with geocoded tags
   1 - db.getCollection('tweets').find({'place.full_name': 'Nepal'}).count()/db.getCollection('tweets').find({'coordinates': null}).count()
 
 
