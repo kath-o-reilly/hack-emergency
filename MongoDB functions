@@ -4,3 +4,4 @@ db.system.js.save(
        value: function() {db.getCollection('tweets').find({full_name:'Nepal'})}
    }
   );
+  sdjlchsbds;bs
