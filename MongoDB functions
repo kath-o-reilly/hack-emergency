@@ -1,7 +1,11 @@
+#### an attempt to write this function to the collection
 db.system.js.save(
    {
        _id: "summaryGeocodedTweets",
        value: function() {db.getCollection('tweets').find({full_name:'Nepal'})}
    }
   );
+  #### to have the proportion f tweets with geocoded tags
+  1 - db.getCollection('tweets').find({'place.full_name': 'Nepal'}).count()/db.getCollection('tweets').find({'coordinates': null}).count()
+
 
